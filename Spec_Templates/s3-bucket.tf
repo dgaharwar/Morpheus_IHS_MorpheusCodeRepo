@@ -3,8 +3,10 @@
 ###################
 
 provider "aws" {
+    region     = var.region
+    access_key = var.access_key
+    secret_key = var.secret_key
     ec2_metadata_service_endpoint_mode = "IPv4"
-    region = local.cloud_options.region
 }
 
 #===========S3-Bucket ======#
