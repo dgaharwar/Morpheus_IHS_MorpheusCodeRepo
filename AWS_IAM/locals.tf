@@ -2,7 +2,7 @@ locals {
 
 # Common tags to be assigned to all AWS resources and Azure Resource Groups
 
-  default_tags = {
+  common_tags = {
     Name = "test"
     PrimaryContact = "test"
     SecondaryContact = "test"
