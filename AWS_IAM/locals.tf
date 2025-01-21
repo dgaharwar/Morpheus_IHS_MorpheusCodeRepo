@@ -23,7 +23,7 @@ locals {
   }
 
   instance_options = {
-    name           = "<%=instance.displayName%>"
+    name           = "<%=instance.name%>"
     domainName     = "<%=instance.domainName%>"
     securitygroups = "<%= instance.metadata.CloudSecurityGroup%>"
   }
