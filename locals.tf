@@ -1,3 +1,17 @@
+   locals {
+       cloud_options = {
+           region        = "<%= instance.metadata.CloudRegion%>"
+           account       = "<%= instance.metadata.CloudAccount%>"
+           rg_name       = "<%= instance.metadata.ResourceGroupName%>"
+           iam_user_name = "<%= instance.metadata.IAMUserName%>"
+           azure_sku     = "<%= instance.metadata.AzureSKU%>"
+       }
+   }
+
+
+
+
+
 locals {
 
 # Common tags to be assigned to all AWS resources and Azure Resource Groups
